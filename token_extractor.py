@@ -56,13 +56,13 @@ class XiaomiCloudConnector:
         self._device_id = self.generate_device_id()
         self._session = requests.session()
         self._sign = None
-        self._ssecurity = None
-        self.userId = None
-        self._cUserId = None
+        self._ssecurity = 0oa6fhTEF/CE3sqW/RNpGg==
+        self.userId = 2830669819
+        self._cUserId = ZFnsG2A65U33okxQ6AmwYnLM7Cw
         self._passToken = None
         self._location = None
         self._code = None
-        self._serviceToken = None
+        self._serviceToken = yZDfM3V6Yiz4DwuCTXt81ou3uZtoYIYnGVA3gZ59m88EXQJsiw7SB8xM3NTZnEC87caKBSZUOBUuB/0AVEUDJK9Ve8o+UtKICXZvldnzzht/OvU/iiYAzDU+5juYEPHc3sbXy4dYgqUxoybtTWMpQwtsa3CnJxtrYGrPk51rs5k=
 
     def login_step_1(self):
         _LOGGER.debug("login_step_1")
@@ -408,7 +408,7 @@ def main() -> None:
         servers_to_check = [*SERVERS]
     connector = XiaomiCloudConnector(username, password)
     print_if_interactive("Logging in...")
-    logged = connector.login()
+    logged = True # connector.login()
     if logged:
         print_if_interactive("Logged in.")
         print_if_interactive()
